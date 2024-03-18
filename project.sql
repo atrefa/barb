@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Már 18. 13:15
+-- Létrehozás ideje: 2024. Már 18. 13:26
 -- Kiszolgáló verziója: 10.4.28-MariaDB
 -- PHP verzió: 8.2.4
 
@@ -24,6 +24,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Tábla szerkezet ehhez a táblához `haircutstyles`
+--
+
+CREATE TABLE `haircutstyles` (
+  `HaircutStyleID` int(11) NOT NULL,
+  `StyleName` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `haircutstyles`
+--
+
+INSERT INTO `haircutstyles` (`HaircutStyleID`, `StyleName`) VALUES
+(1, 'Hajvágás'),
+(2, 'Hajvágás + szakáll igazítás'),
+(3, 'Szakáll pengés és gépi igazítás'),
+(4, 'Egy hossz hajvágás'),
+(5, 'Egy hossz hajvágás + szakáll igazítás'),
+(6, 'Szakáll igazítás + szakállfestés'),
+(7, 'Hajvágás + szakálligazítás + szakállfestés'),
+(8, 'Hajvágás + Szakáll igazítás + Szakállfestés + Hajf');
+
+-- --------------------------------------------------------
+
+--
 -- Tábla szerkezet ehhez a táblához `idopntfoglalas`
 --
 
@@ -34,6 +59,32 @@ CREATE TABLE `idopntfoglalas` (
   `telefonszam` int(11) NOT NULL,
   `datum` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `prices`
+--
+
+CREATE TABLE `prices` (
+  `PriceID` int(11) NOT NULL,
+  `HaircutStyleID` int(11) DEFAULT NULL,
+  `Price` decimal(10,2) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `prices`
+--
+
+INSERT INTO `prices` (`PriceID`, `HaircutStyleID`, `Price`) VALUES
+(1, 1, 4500.00),
+(2, 2, 7500.00),
+(3, 3, 3000.00),
+(4, 4, 3500.00),
+(5, 5, 7000.00),
+(6, 6, 8000.00),
+(7, 7, 13500.00),
+(8, 8, 18000.00);
 
 --
 -- Indexek a kiírt táblákhoz
