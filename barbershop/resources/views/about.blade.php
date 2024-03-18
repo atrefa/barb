@@ -22,7 +22,7 @@
                     <li><a href="galery">Munkáink</a></li>
                     <li><a href="about">Árak</a></li>
                     <li><a href="contact" class="current-page">Kapcsolat</a></li>
-                    <li><a href="login">Bejelentkezés</a></li>
+                    <li><a href="#" onclick="openLoginPopup()">Bejelentkezés</a></li>
                 </ul>
 
             </nav>
@@ -36,12 +36,54 @@
         <div class="about-content">
         </div>
     </main>
+    <div class="slides1" id="price-list-section">
+        <table border="1" id="price-table">
+            <!-- A táblázatot most már üresen hagyjuk, majd JavaScripttel töltjük fel. -->
+        </table>
+    </div>
+    </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Árak lekérdezése
+    fetch('get_prices.php')
+        .then(response => response.json())
+        .then(prices => {
+            // Táblázat elem referenciája
+            const table = document.querySelector('#price-list-section table');
 
-    <footer class="footer">
-        <h3><span id="demo">&copy;</span><a href="#">Barbershop Budapest</a></h3>
-    </footer>
+            // Árak hozzáadása a táblázathoz
+            prices.forEach(price => {
+                const row = table.insertRow(-1);
+                const cell1 = row.insertCell(0);
+                const cell2 = row.insertCell(1);
 
-    <script src="js/index.js"></script>
+                cell1.textContent = price.style;
+                cell2.textContent = price.price + ' Ft';
+            });
+        })
+        .catch(error => console.error('Hiba:', error));
+});
+
+</script>
+<footer>
+    <p>&copy; 2023 Barber Shop Budapest. Minden jog fenntartva.</p>
+</footer>
+<div class="popup" id="loginPopup">
+            <div class="popup-content">
+                <span class="close" onclick="closeLoginPopup()">&times;</span>
+                <h2>Bejelentkezés</h2>
+                <form>
+                    <input type="email" class="login-input" placeholder="E-mail cím" required>
+                    <input type="password" class="login-input" placeholder="Jelszó" required>
+                    <button type="button" class="login-button" onclick="login()">Bejelentkezés</button>
+                </form>
+                <p>Vagy</p>
+                <button type="button" class="register-button" onclick="register()">Regisztráció</button>
+            </div>
+        </div>
+    </main>
+    <script src="js/barb.js"></script>
 </body>
 
 </html>

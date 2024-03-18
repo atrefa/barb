@@ -71,24 +71,4 @@
             </div>
         </div>
     </main>
-
-    <script>
-        function openLoginPopup() {
-            document.getElementById('loginPopup').style.display = 'block';
-        }
-
-        function closeLoginPopup() {
-            document.getElementById('loginPopup').style.display = 'none';
-        }
-
-        function login() {
-            
-            alert('Bejelentkezés sikeres!');
-            closeLoginPopup();
-        }
-
-        function register() {
-            alert('Regisztráció sikeres!');
-            closeLoginPopup();
-        }
-    </script>
+    <script src="js/barb.js"></script>    

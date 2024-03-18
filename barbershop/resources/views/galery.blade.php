@@ -60,11 +60,25 @@
             </div>
         </div>
     </main>
-    <footer class="footer">
-        <h3><span id="demo">&copy;</span><a href="#">Barbershop Budapest</a></h3>
-    </footer>
+    <div class="popup" id="loginPopup">
+            <div class="popup-content">
+                <span class="close" onclick="closeLoginPopup()">&times;</span>
+                <h2>Bejelentkezés</h2>
+                <form>
+                    <input type="email" class="login-input" placeholder="E-mail cím" required>
+                    <input type="password" class="login-input" placeholder="Jelszó" required>
+                    <button type="button" class="login-button" onclick="login()">Bejelentkezés</button>
+                </form>
+                <p>Vagy</p>
+                <button type="button" class="register-button" onclick="register()">Regisztráció</button>
+            </div>
+        </div>
+    </main>
 
-    <script src="js/index.js"></script>
+    <script src="js/barb.js"></script>
 </body>
 
 </html>
+<footer>
+    <p>&copy; 2023 Barber Shop Budapest. Minden jog fenntartva.</p>
+</footer>
