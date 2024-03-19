@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -36,6 +36,8 @@
         <div class="about-content">
         </div>
     </main>
+    
+    
     <div class="slides1" id="price-list-section">
         <table border="1" id="price-table">
             <!-- A táblázatot most már üresen hagyjuk, majd JavaScripttel töltjük fel. -->

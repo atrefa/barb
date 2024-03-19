@@ -393,3 +393,12 @@ footer h3 > a {
   bottom: -10px;
   transition: 0.5s;
 }
+.slides1 table tr{
+  height: 35px;
+  color: #491717;
+
+}
+.nyitv{
+  height: 450px;
+ padding-left: 60%;
+}
