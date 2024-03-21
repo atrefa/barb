@@ -398,7 +398,10 @@ footer h3 > a {
   color: #491717;
 
 }
+.slides1{
+  display: flex;
+  justify-content: space-around;
+}
 .nyitv{
-  height: 450px;
- padding-left: 60%;
+  height: 300px;
 }

@@ -39,10 +39,14 @@
     
     
     <div class="slides1" id="price-list-section">
+        <div>
         <table border="1" id="price-table">
             <!-- A táblázatot most már üresen hagyjuk, majd JavaScripttel töltjük fel. -->
         </table>
+        
     </div>
+    <div>
+        <img class="nyitv" src="img/nyitv22.jpg">
     </div>
 </div>
 <script>
