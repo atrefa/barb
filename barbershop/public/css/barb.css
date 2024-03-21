@@ -401,7 +401,37 @@ footer h3 > a {
 .slides1{
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
-.nyitv{
-  height: 300px;
+
+/* Formázás a price-list-section div-hez */
+#price-list-section {
+  margin-bottom: 20px;
+}
+
+/* Formázás a price-table táblázathoz */
+#price-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Formázás a táblázat fejlécéhez */
+#price-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+/* Formázás a táblázat cellákhoz */
+#price-table td, #price-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Formázás a nyitv osztályhoz tartozó képhez */
+.nyitv {
+  width: 74%; /* Kép maximális szélessége a szülőelemhez viszonyítva */
+  height: auto;
+  max-width: 100%; /* Kép maximális szélessége */
+  
 }
