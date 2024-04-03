@@ -2,32 +2,42 @@
 session_start();
 if (isset($_SESSION['user_id'])){
     echo '
-    <header>
-        <div class="title"><p>Barbershopbp</p></div>
-        <nav class="links">
-            <a href="/">Home</a>
-            <a href="galery">Munkáink</a>
-            <a href="about">Árak</a>
-            <a href="contact">Kapcsolat</a>
-            <a href="logout">Log out</a>
+    <header class="header">
+    <div class="container container-nav">
+        <div class="site-title">
+            <h1>Barbershop Budapest</h1>
+            <p class="subtitle">Getting your hair ready</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/" class="current-page">Home</a></li>
+                <li><a href="galery">Munkáink</a></li>
+                <li><a href="about">Árak</a></li>
+                <li><a href="contact">Kapcsolat</a></li>
+                <li><a href="logout.php">Kijelentkezés</a></li>
+            </ul>
+
         </nav>
-    </header>';
+    </div>
+</header>';
 } else {
     echo '
-    <header>
-        <div class="title"><p>Barbershopbp</p></div>
-        <nav class="links">
-            <a href="/">Home</a>
-            <a href="Animes">Animes</a>
-            <a href="latest">Latest</a>
-            <a href="login">Log in</a>
-            <a href="register">Register</a>
-        </nav>
-        <div class="search">
-            <input class="search-bar" id="kereso" placeholder="Search">
+    <header class="header">
+        <div class="container container-nav">
+            <div class="site-title">
+                <h1>Barbershop Budapest</h1>
+                <p class="subtitle">Getting your hair ready</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/" class="current-page">Home</a></li>
+                    <li><a href="galery">Munkáink</a></li>
+                    <li><a href="about">Árak</a></li>
+                    <li><a href="#" onclick="openLoginPopup()">Bejelentkezés</a></li>
+                </ul>
+
+            </nav>
         </div>
     </header>';
 }
 ?>
- 
-$_SESSION['user_id'] = $row["user_id"]

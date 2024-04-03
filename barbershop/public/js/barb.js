@@ -1,5 +1,4 @@
 const d = new Date();
-document.getElementById('demo').innerHTML = 'Copyright ' + d.getFullYear();
 
 document.addEventListener("DOMContentLoaded", function () {
     // Árak lekérdezése
@@ -30,12 +29,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function login() {
-        
-        alert('Bejelentkezés sikeres!');
-        closeLoginPopup();
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('jelszo').value;
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'login.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                alert(xhr.responseText);
+                closeLoginPopup();
+                location.reload();
+            }
+        };
+        xhr.send('email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
     }
-
+    
     function register() {
-        alert('Regisztráció sikeres!');
-        closeLoginPopup();
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('jelszo').value;
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', 'register.php', true);
+        xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                alert(xhr.responseText);
+                closeLoginPopup();
+                location.reload();
+            }
+        };
+        xhr.send('email=' + encodeURIComponent(email) + '&password=' + encodeURIComponent(password));
     }
+    

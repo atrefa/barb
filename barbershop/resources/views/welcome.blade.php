@@ -19,24 +19,9 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="container container-nav">
-            <div class="site-title">
-                <h1>Barbershop Budapest</h1>
-                <p class="subtitle">Getting your hair ready</p>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="/" class="current-page">Home</a></li>
-                    <li><a href="galery">Munkáink</a></li>
-                    <li><a href="about">Árak</a></li>
-                    <li><a href="contact">Kapcsolat</a></li>
-                    <li><a href="#" onclick="openLoginPopup()">Bejelentkezés</a></li>
-                </ul>
-
-            </nav>
-        </div>
-    </header>
+<?php
+ include 'header.php';
+?>
     <main>
         <div id="home">
         <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
@@ -48,7 +33,13 @@
                     <h3>Getting your hair ready</h3>
                     <h1>Barbershop Budapest</h1>
                     <hr id="hr-main">
-                    <a href="contact" class="button btn-hire">Időpontfoglalás</a>
+                    <?php
+                        if (isset($_SESSION['user_id'])){
+                            echo '
+                            <a href="contact" class="button btn-hire">Időpontfoglalás</a>
+                           ';
+                        }
+                    ?>
                 </div>
             </div>
         </div>
@@ -59,11 +50,11 @@
 
 <div class="popup" id="loginPopup">
             <div class="popup-content">
-                <span class="close" onclick="closeLoginPopup()">&times;</span>
+                <span class="close">&times;</span>
                 <h2>Bejelentkezés</h2>
                 <form>
-                    <input type="email" class="login-input" placeholder="E-mail cím" required>
-                    <input type="password" class="login-input" placeholder="Jelszó" required>
+                    <input type="email" class="login-input" placeholder="E-mail cím" name="email" id="email" required>
+                    <input type="password" class="login-input" placeholder="Jelszó" name="jelszo" id="jelszo" required>
                     <button type="button" class="login-button" onclick="login()">Bejelentkezés</button>
                 </form>
                 <p>Vagy</p>

@@ -62,11 +62,11 @@
     </main>
     <div class="popup" id="loginPopup">
             <div class="popup-content">
-                <span class="close" onclick="closeLoginPopup()">&times;</span>
+                <span class="close">&times;</span>
                 <h2>Bejelentkezés</h2>
                 <form>
-                    <input type="email" class="login-input" placeholder="E-mail cím" required>
-                    <input type="password" class="login-input" placeholder="Jelszó" required>
+                    <input type="email" class="login-input" placeholder="E-mail cím" name="email" id="email" required>
+                    <input type="password" class="login-input" placeholder="Jelszó" name="jelszo" id="jelszo" required>
                     <button type="button" class="login-button" onclick="login()">Bejelentkezés</button>
                 </form>
                 <p>Vagy</p>
