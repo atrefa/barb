@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Már 18. 13:26
--- Kiszolgáló verziója: 10.4.28-MariaDB
--- PHP verzió: 8.2.4
+-- Létrehozás ideje: 2024. Ápr 08. 14:15
+-- Kiszolgáló verziója: 10.4.32-MariaDB
+-- PHP verzió: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `project`
 --
+CREATE DATABASE IF NOT EXISTS `project` DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
+USE `project`;
 
 -- --------------------------------------------------------
 
@@ -86,6 +88,26 @@ INSERT INTO `prices` (`PriceID`, `HaircutStyleID`, `Price`) VALUES
 (7, 7, 13500.00),
 (8, 8, 18000.00);
 
+-- --------------------------------------------------------
+
+--
+-- Tábla szerkezet ehhez a táblához `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_hungarian_ci;
+
+--
+-- A tábla adatainak kiíratása `users`
+--
+
+INSERT INTO `users` (`user_id`, `email`, `password`) VALUES
+(1, 'teszt@teszt.hu', '$2y$10$3Hdodo.JOtwgIGiak1J1NuPjJRvPX9yg8dtinsAQf8Ezp9EJP27GG'),
+(2, 'kovi44', '$2y$10$KJcq/uaLgnydnLQSZGhazuXS7n58NCQWVWSRWgCbsKtK5i816FrOm');
+
 --
 -- Indexek a kiírt táblákhoz
 --
@@ -97,6 +119,13 @@ ALTER TABLE `idopntfoglalas`
   ADD PRIMARY KEY (`id`);
 
 --
+-- A tábla indexei `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
 -- A kiírt táblák AUTO_INCREMENT értéke
 --
 
@@ -105,6 +134,12 @@ ALTER TABLE `idopntfoglalas`
 --
 ALTER TABLE `idopntfoglalas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT a táblához `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
