@@ -62,4 +62,9 @@
             </div>
         </div>
     </main>
-    <script src="js/barb.js"></script>    
+    <script src="js/barb.js"></script> 
+    <script>
+        window.onload = (event) => {
+            alert("A kapcsolat eléréséhez regisztrácio/bejelentekzés szükséges!!");
+};
+    </script>   
