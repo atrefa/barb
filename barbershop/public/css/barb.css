@@ -150,7 +150,7 @@ nav a:focus {
   margin-bottom: 8px;
 }
 
-/* munkaink Section */
+/* Munkaink Section */
 .gallery-header {
   text-align: center;
   padding: 32px;
@@ -204,7 +204,7 @@ nav a:focus {
   }
 }
 
-/* rolunk Section */
+/* Árak Section */
 .about {
   margin: 3rem 4rem;
   display: flex;
@@ -226,7 +226,7 @@ nav a:focus {
 .about-content p {
   color: #181b2c;
 }
-/* kapcsolat SEction */
+/* Kapcsolat Section */
 .contact h1 {
   text-align: center;
   font-weight: 700;
@@ -424,7 +424,7 @@ footer h3 > a {
 /* Formázás a táblázat cellákhoz */
 #price-table td, #price-table th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 10px;
   text-align: left;
 }
 
