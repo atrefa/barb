@@ -65,6 +65,6 @@
     <script src="js/barb.js"></script> 
     <script>
         window.onload = (event) => {
-            alert("A kapcsolat eléréséhez regisztrácio/bejelentekzés szükséges!!");
+            alert("A kapcsolat eléréséhez regisztráció/bejelentkezés szükséges!!");
 };
     </script>   

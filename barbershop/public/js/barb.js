@@ -48,6 +48,9 @@ document.addEventListener("DOMContentLoaded", function () {
     function register() {
         var email = document.getElementById('email').value;
         var password = document.getElementById('jelszo').value;
+        if (email.lenght == 0){
+            alert("toltse ki az összes mezöt");
+        }
     
         var xhr = new XMLHttpRequest();
         xhr.open('POST', 'register.php', true);
