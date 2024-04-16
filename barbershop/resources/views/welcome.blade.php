@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +16,6 @@
         }
     </style>
 </head>
-
 <body>
 <?php
  include 'header.php';
@@ -27,7 +25,6 @@
         <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
         <source src="img/video.mp4" type="video/mp4" id="video">
 </video>
-
             <div class="overlay">
                 <div class="landing-text">
                     <h3>Getting your hair ready</h3>
@@ -45,9 +42,7 @@
         </div>
     </main>
 </body>
-
 </html>
-
 <div class="popup" id="loginPopup">
             <div class="popup-content">
                 <span class="close" onclick='closeLoginPopup()'>&times;</span>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/barb.css">
 </head>
-
 <body>
 <?php
  include 'header.php';
@@ -59,10 +57,8 @@
             </div>
         </div>
     </main>
-
     <script src="js/barb.js"></script>
 </body>
-
 </html>
 <footer>
     <p>&copy; 2023 Barber Shop Budapest. Minden jog fenntartva.</p>

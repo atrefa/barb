@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="hu">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,12 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/barb.css">
 </head>
-
 <body>
 <?php
  include 'header.php';
 ?>
-
     <main class="about">
         <div class="about-header">
             <h1>Árak</h1>
@@ -21,14 +18,11 @@
         <div class="about-content">
         </div>
     </main>
-    
-    
     <div class="slides1" id="price-list-section">
         <div>
         <table border="1" id="price-table">
             <!-- A táblázatot most már üresen hagyjuk, majd JavaScripttel töltjük fel. -->
-        </table>
-        
+        </table> 
     </div>
     <div>
         <img class="nyitv" src="img/nyitv22.jpg">
@@ -55,7 +49,6 @@
         })
         .catch(error => console.error('Hiba:', error));
 });
-
 </script>
 <footer>
     <p>&copy; 2023 Barber Shop Budapest. Minden jog fenntartva.</p>
@@ -76,5 +69,4 @@
     </main>
     <script src="js/barb.js"></script>
 </body>
-
 </html>
