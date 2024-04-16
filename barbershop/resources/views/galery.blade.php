@@ -47,7 +47,7 @@
     </main>
     <div class="popup" id="loginPopup">
             <div class="popup-content">
-                <span class="close">&times;</span>
+                <span class="close"onclick='closeLoginPopup()'>&times;</span>
                 <h2>Bejelentkezés</h2>
                 <form>
                     <input type="email" class="login-input" placeholder="E-mail cím" name="email" id="email" required>

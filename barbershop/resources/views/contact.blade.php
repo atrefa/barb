@@ -26,14 +26,7 @@
                 <h4>E-mail</h4>
                 <p>info@barbershopbudapest.com</p>
             </div>
-            <div class="flex-item-right">
-                <form action="">
-                    <input type="text" id="fname" placeholder="Név">
-                    <input type="text" name="subject" id="subject" placeholder="Tárgy">
-                    <textarea name="" id="textarea" cols="30" rows="10"></textarea>
-                    <button type="button">Üzenet elküldése</button>
-                </form>
-            </div>
+         
         </div>
     </main>
     <footer>
@@ -41,7 +34,7 @@
 </footer>
 <div class="popup" id="loginPopup">
             <div class="popup-content">
-                <span class="close">&times;</span>
+                <span class="close"onclick='closeLoginPopup()'>&times;</span>
                 <h2>Bejelentkezés</h2>
                 <form>
                     <input type="email" class="login-input" placeholder="E-mail cím" name="email" id="email" required>
