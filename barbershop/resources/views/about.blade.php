@@ -39,7 +39,7 @@
 
             // Árak hozzáadása a táblázathoz
             prices.forEach(price => {
-                const row = table.insertRow(-1);
+                const row = table.insertRow(1);
                 const cell1 = row.insertCell(0);
                 const cell2 = row.insertCell(1);
 

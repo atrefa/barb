@@ -430,7 +430,7 @@ footer h3 > a {
 
 /* Formázás a nyitv osztályhoz tartozó képhez */
 .nyitv {
-  width: 74%; /* Kép maximális szélessége a szülőelemhez viszonyítva */
+  width: 79%; /* Kép maximális szélessége a szülőelemhez viszonyítva */
   height: auto;
   max-width: 100%; /* Kép maximális szélessége */
   
