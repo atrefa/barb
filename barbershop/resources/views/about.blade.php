@@ -24,9 +24,6 @@
             <!-- A táblázatot most már üresen hagyjuk, majd JavaScripttel töltjük fel. -->
         </table> 
     </div>
-    <div>
-        <img class="nyitv" src="img/nyitv22.jpg">
-    </div>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function () {

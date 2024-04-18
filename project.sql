@@ -44,7 +44,7 @@ INSERT INTO `haircutstyles` (`HaircutStyleID`, `StyleName`) VALUES
 (5, 'Egy hossz hajvágás + szakáll igazítás'),
 (6, 'Szakáll igazítás + szakállfestés'),
 (7, 'Hajvágás + szakálligazítás + szakállfestés'),
-(8, 'Hajvágás + Szakáll igazítás + Szakállfestés + Hajf');
+(8, 'Hajvágás + Szakáll igazítás + Szakállfestés + Hajfestés');
 
 -- --------------------------------------------------------
 

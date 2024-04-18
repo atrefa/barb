@@ -406,13 +406,13 @@ footer h3 > a {
 
 /* Formázás a price-list-section div-hez */
 #price-list-section {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Formázás a price-table táblázathoz */
 #price-table {
   border-collapse: collapse;
-  width: 100%;
+  width: 110%;
 }
 
 /* Formázás a táblázat fejlécéhez */
@@ -424,14 +424,7 @@ footer h3 > a {
 /* Formázás a táblázat cellákhoz */
 #price-table td, #price-table th {
   border: 1px solid #ddd;
-  padding: 10px;
+  padding: 21px;
   text-align: left;
 }
 
-/* Formázás a nyitv osztályhoz tartozó képhez */
-.nyitv {
-  width: 79%; /* Kép maximális szélessége a szülőelemhez viszonyítva */
-  height: auto;
-  max-width: 100%; /* Kép maximális szélessége */
-  
-}

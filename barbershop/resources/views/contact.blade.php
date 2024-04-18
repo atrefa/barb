@@ -22,7 +22,10 @@
                 <h4>Telefonszám</h4>
                 <p>+36 20 399 4475</p>
                 <h4>E-mail</h4>
-                <p>info@barbershopbudapest.com</p>
+                <p>barbershopbudapest@gmail.com</p>
+                <h4>Nyitvatartás</h4>
+                <p>H-Sz: 9:00-19:00 -
+                    Vasárnap Zárva.</p>
             </div>
         </div>
     </main>
