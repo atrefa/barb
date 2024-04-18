@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Gép: 127.0.0.1
--- Létrehozás ideje: 2024. Ápr 08. 14:15
--- Kiszolgáló verziója: 10.4.32-MariaDB
--- PHP verzió: 8.2.12
+-- Létrehozás ideje: 2024. Ápr 18. 11:53
+-- Kiszolgáló verziója: 10.4.28-MariaDB
+-- PHP verzió: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Adatbázis: `project`
 --
-CREATE DATABASE IF NOT EXISTS `project` DEFAULT CHARACTER SET utf8 COLLATE utf8_hungarian_ci;
-USE `project`;
 
 -- --------------------------------------------------------
 
@@ -106,7 +104,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`user_id`, `email`, `password`) VALUES
 (1, 'teszt@teszt.hu', '$2y$10$3Hdodo.JOtwgIGiak1J1NuPjJRvPX9yg8dtinsAQf8Ezp9EJP27GG'),
-(2, 'kovi44', '$2y$10$KJcq/uaLgnydnLQSZGhazuXS7n58NCQWVWSRWgCbsKtK5i816FrOm');
+(2, 'kovi44', '$2y$10$KJcq/uaLgnydnLQSZGhazuXS7n58NCQWVWSRWgCbsKtK5i816FrOm'),
+(37, 'T@t.hu', '$2y$10$Dusp/Y0kgGiqCak63XtBweOWvLyj6nrYHvC2jeBgk5/sx3pvRng.W');
 
 --
 -- Indexek a kiírt táblákhoz
@@ -139,7 +138,7 @@ ALTER TABLE `idopntfoglalas`
 -- AUTO_INCREMENT a táblához `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
