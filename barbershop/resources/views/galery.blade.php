@@ -47,6 +47,7 @@
             <div class="popup-content">
                 <span class="close"onclick='closeLoginPopup()'>&times;</span>
                 <h2>Bejelentkezés</h2>
+                <h4>A Kapcsolat eléréséhez Regisztráció vagy Bejelentkezés szükséges!</h4>
                 <form>
                     <input type="email" class="login-input" placeholder="E-mail cím" name="email" id="email" required>
                     <input type="password" class="login-input" placeholder="Jelszó" name="jelszo" id="jelszo" required>

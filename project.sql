@@ -42,9 +42,9 @@ INSERT INTO `haircutstyles` (`HaircutStyleID`, `StyleName`) VALUES
 (3, 'Szakáll pengés és gépi igazítás'),
 (4, 'Egy hossz hajvágás'),
 (5, 'Egy hossz hajvágás + szakáll igazítás'),
-(6, 'Szakáll igazítás + szakállfestés'),
-(7, 'Hajvágás + szakálligazítás + szakállfestés'),
-(8, 'Hajvágás + Szakáll igazítás + Szakállfestés');
+(6, 'Szakáll igazítás + szakáll festés'),
+(7, 'Hajvágás + Hajfestés'),
+(8, 'Hajvágás + Szakáll igazítás + Szakáll festés');
 
 -- --------------------------------------------------------
 
@@ -83,7 +83,7 @@ INSERT INTO `prices` (`PriceID`, `HaircutStyleID`, `Price`) VALUES
 (4, 4, 3500.00),
 (5, 5, 7000.00),
 (6, 6, 8000.00),
-(7, 7, 13500.00),
+(7, 7, 10000.00),
 (8, 8, 15000.00);
 
 -- --------------------------------------------------------
